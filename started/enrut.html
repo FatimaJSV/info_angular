@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Started &mdash; Colorlib Website Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-wrap">
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+    <div class="container">
+
+      <div class="row no-gutters site-navbar align-items-center py-3">
+
+        <div class="col-6 col-lg-2 site-logo">
+          <a href="index.html">Angular</a>
+        </div>
+        <div class="col-6 col-lg-10 text-right menu">
+          <nav class="site-navigation text-right text-md-right">
+
+            <ul class="site-menu js-clone-nav d-none d-lg-block">
+              <li class="active">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active"><a href="portfolio.html">Portfolio</a></li>
+              <li class="has-children active">
+                <a href="services.html">Services</a>
+                <ul class="dropdown arrow-top">
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">WP Development</a></li>
+                  <li><a href="#">Front End</a></li>
+                  <li class="has-children">
+                    <a href="#">Sub Menu</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Web Design</a></li>
+                      <li><a href="#">WordPress Development</a></li>
+                      <li><a href="#">Front End</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="active"><a href="about.html">About</a></li>
+              <li><a href="contact.html">Directivas</a></li>
+              <li><a href="enrut.html">Enrutamiento</a></li>
+              <li><a href="pips.html">Pipes</a></li>
+            </ul>
+
+            <a href="#" class="site-menu-toggle js-menu-toggle text-black d-inline-block d-lg-none"><span class="icon-menu h3"></span></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="heading">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1>Enrutamiento</h1>
+            <h3>Router Module</h3>
+            <p>El RouterModule es el módulo que gestiona el enrutamiento y la navegación en Angular.
+              El Router se encargará de procesar las rutas (URL’s del navegador) y determinar cuál será la vista que deba mostrar en cada dirección. Gestiona la navegación de una vista a otra vista mediante la interpretación de la URL.
+            <br>
+            <p>Además, permite:
+    
+              <li>Pasar parámetros a la vista
+              <li>Proteger determinadas rutas frente a usuarios no autorizados mediante Guards.
+              
+          
+              </div>
+              <img src="images/pic7.PNG">
+              
+        </div>
+        <div>
+          <br>
+          <h3>RouterModule - Componentes</h3>
+          <li>Router
+            <p>Objeto que habilita la navegación de un componente a otro cada vez que se hace clic en un link o escribe una URL en el navegador. Sus métodos de navegación principales son: navigate() y navigateByURL()
+            <li>Route
+              <br>
+              <img src="images/pic8.PNG"> 
+              <p>Es un objeto que consta, como mínimo, de un path y el componente asociado. Representa una ruta de navegación. Indica al Router que vista hay que mostrar cuando el usuario hace clic en un link o escribe una URL en el navegador. El Router parsea y construye la URL final usando la ruta, el objeto Route. Puede contener datos adicionales.
+              <li>Routes
+                <p>Array de las rutas soportadas por la aplicación. Es decir es un array de Route.
+                <li>RouterOutlet
+                  <p>Es una directiva que actúa como contenedor en las que se mostrarán las vistas. Sin esta directiva, la aplicación solo mostraría los componentes indicados en app.component.html
+                  <li>RouterLink
+                    <br>
+                    <img src="images/pic9.PNG"
+                    <p>Es una directiva que enlaza los elementos HTML con una ruta (Route) para que cuando se haga clic se inicie la navegación a la ruta Se podría pensar que es el “href” del elemento HTML <a> Pueden contener parámetros
+                    <li>RouterLinkActive
+                      <p>Es una directiva añade/elimina clases CSS a un elemento HTML que está vinculado a un RouterLink
+                      <li>ActivatedRoute
+                        <p>Objeto que representa la ruta (Route) que está actualmente activada en el componente que se está cargando. Permite funcionalidades como obtener los parámetros que han sido enviados a través del RouterLink.
+                        <li>RouterLink Parameters
+                          <p>Es un array con los argumentos/parámetros de la ruta (Route) Este array se puede especificar tanto en la directiva RouterLink como en el método Router.navigate()
+          <h3>RouterModule - Fundamental</h3>
+          <p>Establecer el <base href> en el index.html
+            <br>
+            Crear el módulo de enrutamiento (RouterModule)
+            <li>Definir las rutas teniendo en cuenta su orden○
+              <li>Exportar el módulo
+                <p>Importar el módulo de enrutamiento en el módulo principal (App.module.ts)
+                  <br>
+                  Asociar los eventos click de los elementos HTML con las rutas5.
+                  <br>
+                  Establecer dónde mostrar se mostrarán las vistas con la directiva RouterOutlet
+      </div>
+    </div>

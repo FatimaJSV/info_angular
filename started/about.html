@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Started &mdash; Colorlib Website Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="site-wrap">
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div> <!-- .site-mobile-menu -->
+
+    <div class="container">
+
+      <div class="row no-gutters site-navbar align-items-center py-3">
+
+        <div class="col-6 col-lg-2 site-logo">
+          <a href="index.html">Angular</a>
+        </div>
+        <div class="col-6 col-lg-10 text-right menu">
+          <nav class="site-navigation text-right text-md-right">
+
+            <ul class="site-menu js-clone-nav d-none d-lg-block">
+              <li class="active">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="active"><a href="portfolio.html">Portfolio</a></li>
+              <li class="has-children active">
+                <a href="services.html">Services</a>
+
+              </li>
+              <li class="active"><a href="about.html">Data Binding</a></li>
+              <li><a href="contact.html">Directivas</a></li>
+              <li><a href="enrut.html">Enrutamiento</a></li>
+              <li><a href="pips.html">Pipes</a></li>
+            </ul>
+
+            <a href="#" class="site-menu-toggle js-menu-toggle text-black d-inline-block d-lg-none"><span class="icon-menu h3"></span></a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <main>
+
+
+      <div class="heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h1>Data Binding</h1>
+              <p>Los componentes deben ser dinámicos: permitir modificar datos, responder a interacciones de usuario y reaccionar ante eventos.</p>    
+            <p>El data binding una técnica en la que los datos permanecen sincronizados entre el componente y la vista. </p>
+           <li>Siempre que el usuario actualiza los datos en la vista, Angular actualiza el componente.</li>
+           <li>Cuando el componente obtiene nuevos datos, Angular actualiza la vista. </li>
+          </div>
+          </div>
+          
+        </div>
+      </div>
+      <!-- END page-heading -->
+
+      <div class="site-section">
+        <div class="container">
+          <div class="row justify-content-between mb-5">
+            <div class="col-lg-7 mb-5 mb-md-0 mb-lg-0">
+              <img src="images/pic5.PNG" alt="Image" class="img-fluid">
+            </div>
+            <div class="col-lg-4">
+              <h3 class="mb-4 text-black">Interpolacion</h3>
+              <p>La información va del componente a la vista {{ templateExpression }}</p>
+              <p>Angular evalúa la expresión, la convierte en cadena y reemplaza templateExpression por su valor. Cada vez que templateExpression se actualiza, Angular actualiza la cadena.</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="site-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-5">
+              
+            </div>
+            <div class="col-6 col-md-6 col-lg-4">
+              <h3 class="mb-4 text-black">Property binding</h3>
+              <div class="testimonial">
+                
+                <div class="mb-3">
+                  
+                </div>
+                <blockquote>Permite asociar una propiedad de un elemento HTML (class, href, src, etc.) con una propiedad 
+                  de un componente. 
+                  <br>
+                  [binding-target]=”templateExpression”
+                  <br>
+                   Cuando cambia el valor del componente, Angular
+                   actualiza la vista.</blockquote>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-4">
+              
+              <h3 class="mb-4 text-black">Event binding</h3>
+              <div class="testimonial">
+                <div class="mb-3">
+                
+                </div>
+                <blockquote>Permite asociar eventos del DOM (clic, keystroke, hover, etc.) con un método de un componente. Por ejemplo, cuando el usuario cambia el valor de un input de texto se podría cambiar el modelo en el componente, ejecutar algún tipo de validación, etc.</blockquote>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-4">
+              <h3 class="mb-4 text-black">Two Way data binding</h3>
+              <div class="testimonial">
+                <div class="mb-3">
+                  
+                  
+                </div>
+                <blockquote>Los cambios hechos en el componente se propagan a la vista y los cambios hechos en la vista se actualizan en el componente●Se usa, fundamentalmente, en formularios</blockquote>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END .site-section -->
+
+
+   
+
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
